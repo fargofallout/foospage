@@ -8,7 +8,8 @@ def main():
 	app.run(debug=True)
 
 def register_blueprints():
-	from foospage.views import home
+	from views import home
+	app.register_blueprint(home.bp)
 
 if __name__ == "__main__":
 	main()
